@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<script src="./script.js"></script>
+<body class="bg-light">
+    <center><br><br><br><br><br><br>
+        <div class="calculator">
+                <label for="head">CASIO</label>
+                <input type="text" name="result" id="txt1" disabled><br>
+
+                <button id="onoff" class="key" onclick="OnOff()">ON/OFF</button>
+                <button id="percent" class="operator" onclick="setData('%')">%</button>
+                <button id="del" class="key" onclick="Del()">Del</button>
+                <button id="ac" class="key" onclick="clearData()">AC</button>
+           
+                <td><button class="num" id="sever" onclick="setData(7)">7</button></td>
+                <td><button class="num" id="eight" onclick="setData(8)">8</button></td>
+                <td><button class="num" id="nine" onclick="setData(9)">9</button></td>
+                <td><button id="sub" class="operator" onclick="setData('-')">-</button></td>
+           
+                <td><button id="four" class="num" onclick="setData(4)">4</button></td>
+                <td><button id="five" class="num" onclick="setData(5)">5</button></td>
+                <td><button id="six" class="num" onclick="setData(6)">6</button></td>
+                <td><button id="di" class="operator" onclick="setData('/')">&divide;</button></td>
+            
+                <td><button id="one" class="num" onclick="setData(1)">1</button></td>
+                <td><button id="two" class="num" onclick="setData(2)">2</button></td>
+                <td><button id="three" class="num" onclick="setData(3)">3</button></td>
+                <td><button id="mul" class="operator" onclick="setData('*')">&times;</button></td>
+            
+                <td><button class="num" id="zer" onclick="setData(0)">0</button></td>
+                <td><button id="dot" class="operator" onclick="setData('.')">.</button></td>
+                <td><button  id="equal" class="operator" onclick="ev()">=</button></td>
+                <td><button id="plus" class="operator" onclick="setData('+')">+</button></td>
+            
+        </div>
+    
+    </center>
+</body>
+</html>
